@@ -1,0 +1,28 @@
+# Архив материалов прошлого сезона хранится только локально.
+/2025-2026/
+Сириус/
+
+# Кэш Python и временные копии ноутбуков.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Локальные виртуальные окружения.
+.venv/
+venv/
+env/
+
+# Локальные настройки с возможными секретами.
+.env
+.env.*
+!.env.example
+
+# Служебные файлы Windows.
+Thumbs.db
+Desktop.ini
+
+# Office temporary files
+~$*.xlsx
+~$*.pptx
+~$*.pdf
+~$*.docx
