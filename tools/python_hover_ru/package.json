@@ -1,0 +1,17 @@
+{
+  "name": "python-learning-hints-ru",
+  "displayName": "Python: простые подсказки на русском",
+  "description": "Короткие учебные пояснения Python из локального словаря.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Education"
+  ],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "main": "./extension.js"
+}
