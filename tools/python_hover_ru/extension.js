@@ -13,7 +13,9 @@ function activate(context) {
         { language: "python", scheme: "file" },
         {
             provideHover(document, position) {
-                const wordRange = document.getWordRangeAtPosition(position);
+                // := состоит из знаков, поэтому ищем его отдельно от обычных имён.
+                const wordRange = document.getWordRangeAtPosition(position, /:=/)
+                    || document.getWordRangeAtPosition(position);
                 if (!wordRange) {
                     return undefined;
                 }
